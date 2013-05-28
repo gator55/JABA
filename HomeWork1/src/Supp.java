@@ -1,3 +1,5 @@
+import java.util.concurrent.atomic.AtomicInteger;
+
 /**
  * Created with IntelliJ IDEA.
  * User: olp
@@ -9,11 +11,12 @@ public class Supp {
     public static void main(String[] args) {
         System.out.println("Hello!");
 
-        int i;
+        AtomicInteger i;
+        i = new AtomicInteger();
 
-        for(i=0;i==5;i++){
-            System.out.println(i);
-            break;
+        for(i.set(0); i.get() != 5; i.getAndIncrement()){
+            System.out.println(i.get());
+
         }
     }
 
