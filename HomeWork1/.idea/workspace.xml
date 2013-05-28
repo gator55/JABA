@@ -2,22 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bbacf651-607f-4839-b2e1-55b416908267" name="Default" comment="">
-      <change type="DELETED" beforePath="E:\#JAVA\GITHUBREPO\JABA\untitled\.idea\.name" afterPath="" />
-      <change type="DELETED" beforePath="E:\#JAVA\GITHUBREPO\JABA\untitled\.idea\compiler.xml" afterPath="" />
-      <change type="DELETED" beforePath="E:\#JAVA\GITHUBREPO\JABA\untitled\.idea\copyright\profiles_settings.xml" afterPath="" />
-      <change type="DELETED" beforePath="E:\#JAVA\GITHUBREPO\JABA\untitled\.idea\encodings.xml" afterPath="" />
-      <change type="DELETED" beforePath="E:\#JAVA\GITHUBREPO\JABA\untitled\.idea\misc.xml" afterPath="" />
-      <change type="DELETED" beforePath="E:\#JAVA\GITHUBREPO\JABA\untitled\.idea\modules.xml" afterPath="" />
-      <change type="DELETED" beforePath="E:\#JAVA\GITHUBREPO\JABA\untitled\.idea\scopes\scope_settings.xml" afterPath="" />
-      <change type="DELETED" beforePath="E:\#JAVA\GITHUBREPO\JABA\untitled\.idea\uiDesigner.xml" afterPath="" />
-      <change type="DELETED" beforePath="E:\#JAVA\GITHUBREPO\JABA\untitled\.idea\vcs.xml" afterPath="" />
-      <change type="DELETED" beforePath="E:\#JAVA\GITHUBREPO\JABA\untitled\src\Supp.java" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="untitled.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Supp.java" changelist="bbacf651-607f-4839-b2e1-55b416908267" time="1369759266142" ignored="false" />
-    <file path="/Dummy.txt" changelist="bbacf651-607f-4839-b2e1-55b416908267" time="1369759379228" ignored="false" />
+    <file path="/Dummy.txt" changelist="bbacf651-607f-4839-b2e1-55b416908267" time="1369759408767" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -340,7 +330,11 @@
       <created>1369759380641</created>
       <updated>1369759380641</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="hgfhf">
+      <created>1369759413653</created>
+      <updated>1369759413653</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
