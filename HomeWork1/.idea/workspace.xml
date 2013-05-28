@@ -7,7 +7,7 @@
     <ignored path="untitled.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Supp.java" changelist="bbacf651-607f-4839-b2e1-55b416908267" time="1369759266142" ignored="false" />
-    <file path="/Dummy.txt" changelist="bbacf651-607f-4839-b2e1-55b416908267" time="1369760103602" ignored="false" />
+    <file path="/Dummy.txt" changelist="bbacf651-607f-4839-b2e1-55b416908267" time="1369760111078" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -346,7 +346,11 @@
       <created>1369760107230</created>
       <updated>1369760107230</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="hgfhf">
+      <created>1369760112886</created>
+      <updated>1369760112886</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="ToolWindowManager">
