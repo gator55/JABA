@@ -38,7 +38,7 @@ public class QuadEq {
             quit("Constant \"a\" can't be 0!");
         }
 
-/*        for (i = 0; i != 3; i++) {
+        /*for (i = 0; i != 3; i++) {
             System.out.println(arrABC[i]);
         }*/
 
