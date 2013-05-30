@@ -46,17 +46,17 @@ public class QuadEq {
         Double b = arrABC[1];
         Double c = arrABC[2];
 
-        Double D = b * b - 4 * a * c;
-        System.out.println("Discriminant: " + D);
+        Double d = b * b - 4 * a * c;
+        System.out.println("Discriminant: " + d);
 
-        if (D < 0) {
+        if (d < 0) {
             quit("Equation doesn't have real roots!\n");
-        } else if (D == 0) {
+        } else if (d == 0) {
             Double x = -b / 2 * a;
             quit("Equation has one root: x = " + x + "\n");
         } else {
-            Double x1 = (-b + Math.sqrt(D)) / 2 * a;
-            Double x2 = (-b - Math.sqrt(D)) / 2 * a;
+            Double x1 = (-b + Math.sqrt(d)) / 2 * a;
+            Double x2 = (-b - Math.sqrt(d)) / 2 * a;
             quit("Roots are: x1 = " + x1 + " and x2 = " + x2 + "\n");
         }
 
