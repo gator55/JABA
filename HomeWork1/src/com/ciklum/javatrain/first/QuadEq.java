@@ -55,8 +55,8 @@ public class QuadEq {
             Double x = -b / 2 * a;
             quit("Equation has one root: x = " + x + "\n");
         } else {
-            Double x1 = (-b + Math.sqrt(d)) / 2 * a;
-            Double x2 = (-b - Math.sqrt(d)) / 2 * a;
+            Double x1 = (-b + Math.sqrt(d)) / (2 * a);
+            Double x2 = (-b - Math.sqrt(d)) / (2 * a);
             quit("Roots are: x1 = " + x1 + " and x2 = " + x2 + "\n");
         }
 
