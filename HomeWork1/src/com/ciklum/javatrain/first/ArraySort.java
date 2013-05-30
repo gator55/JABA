@@ -13,23 +13,23 @@ public class ArraySort {
     public static void main(String[] args) {
         int[] arrInt = new int[10];
         int i;
-        int max=100;
+        int max = 100;
 
         Random rand = new Random();
 
-        for(i=0;i!=arrInt.length;i++){
+        for (i = 0; i != arrInt.length; i++) {
             arrInt[i] = rand.nextInt(max);
         }
 
         System.out.print("Initial array: ");
-        for(i=0;i!=arrInt.length-1;i++){
+        for (i = 0; i != arrInt.length - 1; i++) {
             System.out.print(arrInt[i] + ",");
         }
         System.out.println(arrInt[i]);
 
         arraySortBubble(arrInt);
         System.out.print("Sorted array: ");
-        for(i=0;i!=arrInt.length-1;i++){
+        for (i = 0; i != arrInt.length - 1; i++) {
             System.out.print(arrInt[i] + ",");
         }
         System.out.println(arrInt[i]);
@@ -37,17 +37,14 @@ public class ArraySort {
     }
 
     public static void arraySortBubble(int[] arrInt) {
-        int n=arrInt.length;
+        int n = arrInt.length;
 
-        for (int i=n-1;i>0;i--)
-        {
-            for (int j=0;j<i;j++)
-            {
-                if(arrInt[j]>arrInt[j+1])
-                {
-                    int tmp=arrInt[j];
-                    arrInt[j]=arrInt[j+1];
-                    arrInt[j+1]=tmp;
+        for (int i = n - 1; i > 0; i--) {
+            for (int j = 0; j < i; j++) {
+                if (arrInt[j] > arrInt[j + 1]) {
+                    int tmp = arrInt[j];
+                    arrInt[j] = arrInt[j + 1];
+                    arrInt[j + 1] = tmp;
                 }
             }
         }
