@@ -1,4 +1,4 @@
-/**
+package com.ciklum.javatrain.first; /**
  * Created with IntelliJ IDEA.
  * User: olp
  * Date: 5/30/13
