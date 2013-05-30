@@ -1,3 +1,5 @@
+package com.ciklum.javatrain.first;
+
 /**
  * Created with IntelliJ IDEA.
  * User: olp
