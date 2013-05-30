@@ -1,13 +1,14 @@
-package com.ciklum.javatrain.first; /**
+package com.ciklum.javatrain.first;
+
+import java.io.*;
+
+/**
  * Created with IntelliJ IDEA.
  * User: olp
  * Date: 5/30/13
  * Time: 5:38 PM
  * To change this template use File | Settings | File Templates.
  */
-
-import java.io.*;
-
 public class SwitchTest {
     public static void main(String[] args) {
         int x = 0;
