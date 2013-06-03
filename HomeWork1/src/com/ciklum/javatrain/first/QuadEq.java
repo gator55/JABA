@@ -34,10 +34,6 @@ public class QuadEq {
             }
         }
 
-        if (arrABC[0] == 0) {
-            quit("Constant \"a\" can't be 0!");
-        }
-
         /*for (i = 0; i != 3; i++) {
             System.out.println(arrABC[i]);
         }*/
@@ -46,6 +42,11 @@ public class QuadEq {
         Double b = arrABC[1];
         Double c = arrABC[2];
 
+        if (a == 0) {
+            Double x = -c/b;
+            quit("So, it's not a quadratic equation but Linear and root is: x = " + x + ". ");
+        }
+
         Double d = b * b - 4 * a * c;
         System.out.println("Discriminant: " + d);
 
@@ -53,7 +54,7 @@ public class QuadEq {
             quit("Equation doesn't have real roots!\n");
         } else if (d == 0) {
             Double x = -b / 2 * a;
-            quit("Equation has one root: x = " + x + "\n");
+            quit("Roots are: x1 = x2 = " + x + "\n");
         } else {
             Double x1 = (-b + Math.sqrt(d)) / (2 * a);
             Double x2 = (-b - Math.sqrt(d)) / (2 * a);
@@ -63,7 +64,7 @@ public class QuadEq {
     }
 
     public static void quit(String s) {
-        System.out.println(s + "Bye...");
+        System.out.println(s + " Bye...");
         System.exit(1);
     }
 }
