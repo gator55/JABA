@@ -18,7 +18,7 @@ public class MyEvent<T> {
         this.object = object;
     }
 
-    MyEvent(T object){
+    MyEvent(T object) {
         setObject(object);
     }
 

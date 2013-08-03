@@ -17,9 +17,9 @@ public class MyObserver {
 
     public void subscribe(MyHandler handler) {
         List<MyHandler> handlersList = handlers.get(handler.getType());
+        System.out.println(handler.getType());
         if (handlersList == null) {
             handlersList = new ArrayList<MyHandler>();
-            System.out.println(handler.getType());
             handlers.put(handler.getType(), handlersList);
         }
         handlersList.add(handler);

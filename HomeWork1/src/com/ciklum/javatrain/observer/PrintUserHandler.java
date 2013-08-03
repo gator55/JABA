@@ -7,20 +7,10 @@ package com.ciklum.javatrain.observer;
  * Time: 4:06 PM
  * To change this template use File | Settings | File Templates.
  */
-public class PrintHandler<T> implements MyHandler<T> {
-    public T getO() {
-        return o;
-    }
-
-    public void setO(T o) {
-        this.o = o;
-    }
-
-    private T o;
-
+public class PrintUserHandler implements MyHandler<User> {
     @Override
-    public Class<T> getType() {
-        return (Class<T>) getO().getClass();
+    public Class<User> getType() {
+        return User.class;
     }
 
     @Override
@@ -28,10 +18,7 @@ public class PrintHandler<T> implements MyHandler<T> {
         //Operation operation = event.getOperation();
 
         //System.out.print("operation: " + operation);
-        System.out.println("ph");
-    }
-
-    PrintHandler(T object){
-        setO(object);
+        System.out.print("printUserHandler");
+        System.out.println();
     }
 }

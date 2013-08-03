@@ -14,10 +14,12 @@ import java.io.InputStreamReader;
 public class Main {
     public static void main(String[] args) {
         String name = "user1";
-        MyObserver observer = new MyObserver();   User user1 = new User();
-        PrintHandler<User> ph = new PrintHandler<User>(user1);
+        MyObserver observer = new MyObserver();
+        MyHandler printUserHandler = new PrintUserHandler();
+        observer.subscribe(printUserHandler);
 
-        observer.subscribe(ph);
+        MyHandler printLnUserHandler = new PrintLnUserHandler();
+        observer.subscribe(printLnUserHandler);
 
         System.out.println("Please enter your name:");
         try {
@@ -27,7 +29,7 @@ public class Main {
             e.printStackTrace();
         }
 
-
+        User user1 = new User();
         user1.setName(name);
 
         MyEvent<User> event = new MyEvent<User>(user1);
