@@ -14,8 +14,8 @@ import java.io.InputStreamReader;
 public class Main {
     public static void main(String[] args) {
         String name = "user1";
-        MyObserver observer = new MyObserver();
-        PrintHandler ph = new PrintHandler();
+        MyObserver observer = new MyObserver();   User user1 = new User();
+        PrintHandler<User> ph = new PrintHandler<User>(user1);
 
         observer.subscribe(ph);
 
@@ -27,10 +27,10 @@ public class Main {
             e.printStackTrace();
         }
 
-        User user1 = new User();
+
         user1.setName(name);
 
-        MyEvent event = new MyEvent(Operation.USER_PRINT);
+        MyEvent<User> event = new MyEvent<User>(user1);
         observer.fireEvent(event);
 
     }

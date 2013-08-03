@@ -18,7 +18,11 @@ public class MyEvent<T> {
         this.object = object;
     }
 
-    private Operation operation;
+    MyEvent(T object){
+        setObject(object);
+    }
+
+/*    private Operation operation;
 
     public Operation getOperation() {
         return operation;
@@ -30,5 +34,5 @@ public class MyEvent<T> {
 
     public MyEvent(Operation operation) {
         setOperation(operation);
-    }
+    }*/
 }
