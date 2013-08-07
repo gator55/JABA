@@ -17,7 +17,6 @@ public class MyObserver {
 
     public void subscribe(MyHandler handler) {
         List<MyHandler> handlersList = handlers.get(handler.getType());
-        System.out.println(handler.getType());
         if (handlersList == null) {
             handlersList = new ArrayList<MyHandler>();
             handlers.put(handler.getType(), handlersList);
@@ -27,11 +26,10 @@ public class MyObserver {
 
     public void fireEvent(MyEvent event) {
         Class type = event.getObject().getClass();
-        System.out.println(type);
 
         List<MyHandler> handlersList = handlers.get(type);
         if (handlersList != null) {
-            System.out.println("fireEvent");
+            //System.out.println("fireEvent");
             for (MyHandler handler : handlersList) {
                 handler.handle(event);
             }

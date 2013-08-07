@@ -16,7 +16,7 @@ public class PrintLnUserHandler implements MyHandler<User> {
 
     @Override
     public void handle(MyEvent event) {
-        System.out.println("printLnUserHandler");
-        System.out.println();
+        User user = (User) event.getObject();
+        System.out.println("Handler, " + user.getUsername());
     }
 }

@@ -8,5 +8,5 @@ package com.ciklum.javatrain.observer;
  * To change this template use File | Settings | File Templates.
  */
 public enum Operation {
-    USER_PRINT, USER_PRINTLN
+    REGISTER,SAVE;
 }

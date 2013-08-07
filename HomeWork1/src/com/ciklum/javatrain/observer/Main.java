@@ -14,26 +14,51 @@ import java.io.InputStreamReader;
 public class Main {
     public static void main(String[] args) {
         String name = "user1";
+        String email = "test@test.net";
+
         MyObserver observer = new MyObserver();
-        MyHandler printUserHandler = new PrintUserHandler();
-        observer.subscribe(printUserHandler);
 
         MyHandler printLnUserHandler = new PrintLnUserHandler();
         observer.subscribe(printLnUserHandler);
 
-        System.out.println("Please enter your name:");
-        try {
-            BufferedReader bufferRead = new BufferedReader(new InputStreamReader(System.in));
-            name = bufferRead.readLine();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+        //String username = "piven.oleg@gmail.com";
+        //String password = "***";
+        String username = request("Please enter username for smtp authentication:");
+        String password = request("Please enter password for smtp authentication:");
+
+        MyHandler sendMailHandler = new SendMailHandler(username, password);
+        observer.subscribe(sendMailHandler);
+
+        name = request("Please enter your name:");
+        email = request("Please enter your email:");
 
         User user1 = new User();
-        user1.setName(name);
+        user1.setUsername(name);
+        user1.setEmail(email);
 
         MyEvent<User> event = new MyEvent<User>(user1);
         observer.fireEvent(event);
 
+
+        MyHandler printLnCarHandler = new PrintLnCarHandler();
+        observer.subscribe(printLnCarHandler);
+        Car car = new Car();
+        car.setModel("Ferrari");
+        MyEvent<Car> eventCar = new MyEvent<Car>(car);
+        observer.fireEvent(eventCar);
+
+    }
+
+    private static String request(String msg){
+        System.out.println(msg);
+        String s = null;
+
+        try {
+            BufferedReader bufferRead = new BufferedReader(new InputStreamReader(System.in));
+            s = bufferRead.readLine();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return s;
     }
 }
